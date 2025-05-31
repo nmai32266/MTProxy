@@ -579,7 +579,7 @@ int tcp_rpcs_init_crypto (connection_job_t C, struct tcp_rpc_nonce_packet *P) {
     struct tcp_rpc_nonce_packet s;
     struct tcp_rpc_nonce_ext_packet x;
     struct tcp_rpc_nonce_dh_packet dh;
-  } buf[32];
+  } buf;
 
   struct tcp_rpc_nonce_dh_packet *old_dh = 0, *new_dh = 0;
   unsigned char temp_dh[256];
